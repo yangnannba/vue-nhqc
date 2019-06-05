@@ -75,6 +75,7 @@ export default {
 	}
 	.image{
 		width:100%;
+		height: auto;
 	}
 	.item{
 		display: flex;
