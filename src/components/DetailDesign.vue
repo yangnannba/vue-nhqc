@@ -6,7 +6,7 @@
                 <h2>{{title}}</h2>
 				<h3>{{item.header}}</h3>
 				<p class="description">{{item.description}}</p>
-				<img class="image" :src="item.image" @click="show=true"/>
+				<div class="image"><img :src="item.image" @click="show=true" /></div>					
 			</van-swipe-item>
 
 		</van-swipe>
@@ -75,7 +75,10 @@ export default {
 	}
 	.image{
 		width:100%;
-		height: auto;
+		img{
+			width:100%;
+			height: auto;			
+		}
 	}
 	.item{
 		display: flex;
