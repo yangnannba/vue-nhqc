@@ -70,7 +70,7 @@ export default {
 		flex:1;
 		width:50%;
 		border:1px solid #F0F0F0;
-		padding:30px 20px;
+		padding:30px 0;
 	}
 	
 }

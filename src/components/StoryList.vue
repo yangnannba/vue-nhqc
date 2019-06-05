@@ -10,7 +10,7 @@
 				<p class="description">{{item.description}}</p>
 			</div>
 			
-			<div v-if="myid==item.id" class="video" @click="myid=-1">
+			<div v-if="myid==item.id" class="video" @click.self="myid=-1">
 				<video width="100%" autoplay  controls :poster="item.image">
 					<source :src="item.video" type="video/mp4">
 					您的浏览器不支持 video 标签。
