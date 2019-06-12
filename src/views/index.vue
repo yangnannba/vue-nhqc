@@ -1,8 +1,8 @@
 <template>
   <div class="index">
-			<MyHeader></MyHeader>		
-     <index-banner></index-banner>
-		 <index-vehicles></index-vehicles>
+	<MyHeader></MyHeader>		
+	<index-banner></index-banner>
+	<index-vehicles></index-vehicles>
   </div>
 </template>
 
@@ -30,5 +30,8 @@ export default {
 
 
 <style scoped>
-
+.index{
+	width:100%;
+	overflow: hidden;
+}
 </style>

@@ -1,8 +1,13 @@
 <template>
   <div id="app">
-	
-        <router-view/>
-		<my-footer :class="{none:$route.name=='detail'}"></my-footer>
+
+
+	  <transition name="van-fade">
+			<router-view/>
+		</transition>
+        
+				
+		<my-footer  :class="{none:$route.name=='detail'}"></my-footer>
   </div>
 </template>
 
@@ -11,6 +16,11 @@ import MyFooter from './components/MyFooter'
 
 export default {
   name: 'App',
+	data:function(){
+		return {
+
+		}
+	},
 	components:{
 		MyFooter
 	}
@@ -112,5 +122,11 @@ body {
 .none{
 	display: none;
 }
+
+
+
+
+
+
 
 </style>

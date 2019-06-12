@@ -42,6 +42,9 @@ export default {
 
 
 <style scoped >
-
+.detail{
+	width:100%;
+	overflow: hidden;
+}
 
 </style>

@@ -1,6 +1,6 @@
 <template>
   <div class="story">
-	  <my-header title="故事"></my-header>
+	  <my-header :title="storytitle"></my-header>
 		<story-list></story-list>
   </div>
 </template>
@@ -12,7 +12,7 @@ export default {
   name: 'story',
   data () {
     return {
-      
+      storytitle:"故事"
     }
   },
 	components:{
@@ -24,5 +24,8 @@ export default {
 
 
 <style scoped>
-
+.story{
+		width:100%;
+	overflow: hidden;
+}
 </style>
